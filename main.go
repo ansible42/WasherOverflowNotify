@@ -23,11 +23,11 @@ func main() {
 
 	pin.Input()
 	pin.PullUp()
-	pin.Detect(rpio.FallEdge) // enable falling edge event detection
-	state := pin.Read()
+
 	for {
 		if pin.Read() == rpio.High {
-			time.Sleep(1 * time.Second)
+			fmt.Println("Sensor has been activated, take action!!")
+			//do a thing
 		}
 		time.Sleep(1 * time.Second)
 	}

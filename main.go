@@ -46,7 +46,7 @@ func main() {
 func send(msg string) {    
 	s// Sender data.
     from := "42depressedrobot@gmail.com"
-    password := "NSQPnCr7oz%79%b"    
+    password :=   
 	// Receiver email address.
     to := []string{
         "taylorkendall@gmail.com",
